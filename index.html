@@ -29,6 +29,19 @@
          font-weight: bold;
          background-color: rgb(226, 198, 208);
        }
+       nav a {
+        font-family:monospace;
+        font-size: x-large;
+        color: #333;
+        padding: 10px 10px;
+        margin: 20px 30px;
+      }
+
+      nav a:hover {
+        background-color: #d6a4b8;
+        color: white;
+      }
+
  
        .flex-container {
          display: flex;
@@ -38,7 +51,6 @@
  
        .flex-item {
          box-sizing: border-box;
-         /* max-width: 350px; */
          background-color: white;
        }
  
@@ -64,11 +76,23 @@
          font-weight: bold;
          background-color: rgb(226, 198, 208);
        }
+       
+      footer p {
+        margin: 10px 0;
+        font-size: 15px;
+      }
+
+      footer a {
+        color: white;
+        font-weight: bold;
+      }
+
+      footer a:hover {
+        color: #f70c3f;
+      }
+
  
        @media (max-width: 1000px) {
-         /* body {
-           background-color: aqua;
-         } */
  
          .flex-container {
            flex-wrap: wrap;
@@ -80,9 +104,6 @@
        }
  
        @media (max-width: 600px) {
-         /* body {
-           background-color: rgb(187, 255, 0);
-         } */
  
          .flex-item {
            flex-basis: 100%;
@@ -91,7 +112,13 @@
      </style>
    </head>
    <body>
-     <nav>Navbar</nav>
+     <!-- <nav>Navbar</nav> -->
+     <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
      <h1 class="max-wrapper">FRUITS BLOG</h1>
      <main class="flex-container max-wrapper">
        <section class="flex-item">
@@ -155,6 +182,9 @@
          </article>
        </section>
      </main>
-     <footer>Footer</footer>
+     <footer> 
+      <p>© 2025 Fruits Blog. All Rights Reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
    </body>
  </html>
